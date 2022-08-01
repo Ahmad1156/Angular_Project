@@ -1,0 +1,45 @@
+<section id="book-a-table" class="book-a-table">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Book A Table</h2>
+        <p>Book <span>Your Stay</span> With Us</p>
+      </div>
+
+      <div class="row g-0">
+
+        <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);"
+          data-aos="zoom-out" data-aos-delay="200"></div>
+
+        <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+          <form #login="ngForm" (ngSubmit)="CompleteLogin(login)" method="post" role="form" class="php-email-form" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="row gy-4">
+              <div class="col-lg-4 col-md-6">
+                <input type="text" name="name" [(ngModel)]="ContactInfo.name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <input type="email" [(ngModel)]="ContactInfo.email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <input type="text" [(ngModel)]="ContactInfo.PhoneNumber" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <input type="text" [(ngModel)]="ContactInfo.Date" name="date" class="form-control" id="date" placeholder="Date" required>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <input type="text" [(ngModel)]="ContactInfo.Time" class="form-control" name="time" id="time" placeholder="Time" required>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <input type="number" [(ngModel)]="ContactInfo.nbOfPeople" class="form-control" name="people" id="people" placeholder="# of people" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" [(ngModel)]="ContactInfo.message" name="message" rows="5" placeholder="Message"></textarea>
+            </div>
+            <div class="text-center mt-5"><button type="submit" (click)="postDatatoApi()">Book a Table</button></div>
+          </form>
+        </div><!-- End Reservation Form -->
+      </div>
+    </div>
+  </section><!-- End Book A Table Section -->
