@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     BookTableComponent,
     ContactUsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
