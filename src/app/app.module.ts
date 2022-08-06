@@ -13,7 +13,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +29,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
