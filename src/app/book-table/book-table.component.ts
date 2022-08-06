@@ -21,14 +21,14 @@ export class BookTableComponent implements OnInit {
     this.apiCaller.post<any>('https://angularrestaurent.herokuapp.com/api/BookTable',
        this.ContactInfo
     ).subscribe(data => { })
-
     
-  }
-  CompleteLogin(login : NgForm){
-    setInterval(()=>{
-       login.reset();
-    },2000)
-     
+    this.ContactInfo.name='';
+    this.ContactInfo.email='';
+    this.ContactInfo.PhoneNumber='';
+    this.ContactInfo.Date='';
+    this.ContactInfo.Time='';
+    this.ContactInfo.nbOfPeople=0;
+    this.ContactInfo.message='';
   }
 
 }
